@@ -14,5 +14,9 @@ def droughts():
 def fires():
     return render_template('fires.html')
 
+@app.route('/interactive_plot')
+def interactive_plot():
+    return render_template('interactive_plot.html')
+
 if __name__ == '__main__':
     app.run()
