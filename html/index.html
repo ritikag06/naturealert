@@ -1,13 +1,194 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>NatureAlert</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f0e1;
+    }
+
+    header {
+      background-color: #e0c07f;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 30px;
+      color: black;
+      border: None;
+      text-decoration: None;
+    }
+
+    a {
+      text-decoration: None;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-top: 5px;
+      padding: 5px;
+    }
+
+    .tabs a {
+      display: inline-block;
+      /* margin-right: 10px; */
+      color: black;
+      text-decoration: none;
+      /* border-radius: 5px; */
+      padding: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: #d1af6c;
+    }
+
+    .tabs a:hover {
+      background-color: #b7944e;
+      padding: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+
+    .content {
+      margin-top: 20px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .content-box {
+      width: 100%;
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center; /* Center the content inside the box */
+    }
+    
+
+    .content-box img {
+      width: 30%;
+      height: auto;
+      float: right;
+      margin: 0 0 10px 10px;
+    }
+
+    .content-box h2 {
+      text-align: center;
+      margin: 0px;
+    }
+    
+    .content-box .btn {
+      display: float;
+      margin: 0 auto; /* Center the button horizontally */
+      padding: 10px 20px;
+      background-color: #d1af6c;
+      color: black;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      text-align: center; /* Center the button text */
+    }
+
+    .content-box p {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+  </style>
 </head>
+
 <body>
-  <h1>NatureAlert</h1>
-  <div>
-    <a href="droughts.html">Droughts</a>
-    <a href="fires.html">Fires</a>
+  <header>
+    <a href="index.html"><h1>NatureAlert</h1></a>
+    <div class="tabs">
+      <a href="index.html">Home</a>
+      <a href="droughts.html">Droughts</a>
+      <a href="fires.html">Fires</a>
+    </div>
+  </header>
+  <div class="content">
+    <div class="content-box">
+      <h2>Droughts in California</h2>
+      <div>
+        <img
+          src="https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2023-01/230109-lake-oroville-california-jm-1523-49126d.jpg"
+          alt="Drought Image">
+        <p>California has a history of enduring severe and prolonged droughts, which have significant impacts on the
+          state's water resources, ecosystems, and communities. The state's Mediterranean climate, characterized by hot
+          and dry summers, coupled with periodic shifts in climate patterns, contribute to the occurrence of drought
+          conditions. These prolonged periods of reduced rainfall lead to decreased water availability, strained
+          agricultural productivity, and heightened risk of wildfires. Droughts in California can last for several
+          years, causing widespread water scarcity and necessitating strict water conservation measures to manage the
+          limited water supplies.
+        </p>
+        <p>
+          The consequences of California droughts extend beyond water scarcity. As the drought intensifies, it affects
+          various sectors of the economy, particularly agriculture, which heavily relies on irrigation for crop
+          production. Farmers face challenges such as reduced water allocations, declining groundwater levels, and
+          increased vulnerability to crop failure. Drought conditions also impact ecosystems and wildlife habitats,
+          leading to reduced biodiversity, stressed ecosystems, and increased risk of wildfires due to dry vegetation.
+          Furthermore, drought-induced water shortages put a strain on urban communities, requiring residents to adopt
+          water-saving practices and enforce water-use restrictions.
+        </p>
+        <p>
+          In response to the recurrent drought challenges, California has implemented various strategies to manage and
+          mitigate the impacts of water scarcity. These measures include the development of comprehensive water
+          management plans, investment in water infrastructure projects, and promotion of water conservation practices
+          at the individual and community levels. The state has also adopted stricter regulations on water usage,
+          incentivized the adoption of water-efficient technologies, and implemented initiatives to increase water
+          recycling and stormwater capture. Additionally, efforts to diversify water sources, such as desalination
+          projects and exploring alternative water supplies, aim to enhance the state's resilience to future droughts.
+          These initiatives seek to ensure a sustainable water future for California while navigating the challenges
+          posed by recurring drought conditions.
+        </p>
+        <a class="btn" href="droughts.html">Click here to learn more about future droughts in California</a>
+      </div>
+    </div>
+    <div class="content-box">
+      <h2>Fires in California</h2>
+      <div>
+        <img
+          src="https://i0.wp.com/calmatters.org/wp-content/uploads/2022/06/112822-WildFire-NB-AP-CM-1.jpg?fit=1200%2C799&ssl=1"
+          alt="Fire Image">
+        <p>California is highly susceptible to wildfires, with the state experiencing a particularly active fire season
+          each year. The combination of a Mediterranean climate, prolonged periods of drought, and strong Santa Ana or
+          Diablo winds creates a perfect storm for the ignition and rapid spread of fires. The dry vegetation serves as
+          fuel for the flames, allowing them to propagate quickly and intensely. The state's vast wildland-urban
+          interface further exacerbates the risk, as residential areas are often nestled within or adjacent to
+          fire-prone regions. As a result, wildfires in California have become increasingly destructive, posing
+          significant threats to human lives, property, and the environment.
+        </p>
+        <p>
+          The impact of California fires extends beyond immediate destruction. These catastrophic events can cause
+          long-lasting environmental damage, leading to the loss of valuable ecosystems and biodiversity. Native
+          habitats and endangered species are often affected, as the flames consume vast areas of forests, grasslands,
+          and chaparral. The destruction of vegetation also results in increased soil erosion and heightened
+          vulnerability to mudslides during subsequent rainy seasons. Moreover, the release of smoke and particulate
+          matter from wildfires significantly impacts air quality, posing health risks to residents even far from the
+          actual fire zones.
+        </p>
+        <p>
+          In recent years, California has been working diligently to improve its approach to fire management and
+          prevention. This involves a multi-faceted strategy, including increased funding for firefighting efforts, the
+          establishment of comprehensive wildfire response plans, and collaboration among various agencies and
+          communities. Additionally, emphasis is placed on proactive measures, such as forest thinning and controlled
+          burns, to reduce fuel loads and prevent uncontrolled fire spread. Public education campaigns are also vital to
+          raise awareness about fire safety practices and evacuation procedures. By combining these efforts, California
+          aims to mitigate the devastating impact of wildfires and build resilience in the face of these recurring
+          natural disasters.
+        </p>
+        <a class="btn" href="index.html">Click here to learn more about future fires in California</a>
+      </div>
+    </div>
   </div>
 </body>
+
 </html>
