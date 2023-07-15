@@ -1,5 +1,5 @@
 import pandas as pd
-import pandas as pd
+
 
 def calculate_total_acre(file_path, name_column, acre_column):
     # Read the CSV file
@@ -7,7 +7,7 @@ def calculate_total_acre(file_path, name_column, acre_column):
 
     # Create a dictionary to store the total acreage for each name
     total_acreage = {}
-
+  
     # Iterate over the rows
     for index, row in data.iterrows():
         name = row['UNIT_ID']
