@@ -1,4 +1,6 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+
 
 
 def calculate_total_acre(file_path, name_column, acre_column):
@@ -10,8 +12,8 @@ def calculate_total_acre(file_path, name_column, acre_column):
   
     # Iterate over the rows
     for index, row in data.iterrows():
-        name = row['UNIT_ID']
-        acre = row['GIS_ACRES']
+        name = row[name_column]
+        acre = row[acre_column]
 
         # Check if the name exists in the dictionary
         if name in total_acreage:
@@ -24,9 +26,22 @@ def calculate_total_acre(file_path, name_column, acre_column):
     # Print the total acreage for each name
     for name, acre in total_acreage.items():
         print(name, ":", acre)
+    print("done")
+
+    names = list(total_acreage.keys())
+    acres = list(total_acreage.values())
+
+    plt.bar(names, acres)
+    plt.xlabel('Name')
+    plt.ylabel('Total Acreage') 
+    plt.title('Total Acreage by Name')
+    # # plt.xticks(rotation=90)
+    plt.show()
 
 # Call the function with the appropriate arguments
-calculate_total_acre('fireData.csv', 'Name', 'Acre')
+calculate_total_acre('fireData.csv', 'UNIT_ID', 'GIS_ACRES')
+
+
 
 
     # (santaclar:60, santaclara:60, tuscane:80)
