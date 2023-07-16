@@ -64,38 +64,40 @@
       padding: 20px;
       display: flex;
       /* justify-content: space-between; */
-			flex-direction: row;
-			gap: 10px
-      /* flex-wrap: wrap;
+      flex-direction: row;
+      gap: 10px
+        /* flex-wrap: wrap;
       justify-content: space-evenly;
       align-items: flex-start; */
-			
+
     }
 
 
-.content-box,
-.content-box2 {
-  flex-basis: 50%;
-  background-color: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  flex-grow: 1;
-}
-	.content-box2 {
-    display: flex;
-    flex-direction: column;
-    /* align-items: flex-start;/* Align items to the top */ 
-    justify-content:flex-start;
-      align-items: stretch;
-	}
+    .content-box,
+    .content-box2 {
+      flex-basis: 50%;
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      flex-grow: 1;
+    }
 
-	.content-box2A{
-		background-color:yellow;
-	
-	}
-		
+    .content-box2 {
+      display: flex;
+      flex-direction: column;
+      /* align-items: flex-start;/* Align items to the top */
+      justify-content: flex-start;
+      align-items: stretch;
+      max-height: fit-content;
+    }
+
+    .content-box2A {
+      background-color: #e0c07f;
+      padding: inherit;
+    }
+
 
 
     /* .content-box img {
@@ -112,7 +114,7 @@
 
     .content-box2 .btn {
       display: float;
-			
+
       margin: 0 auto;
       /* Center the button horizontally */
       padding: 10px 20px;
@@ -125,12 +127,16 @@
       /* Center the button text */
     }
 
-    .content-box p, 
-		.content-box2 p{
+    .content-box p,
+    .content-box2 p {
       text-align: left;
       margin-bottom: 20px;
     }
 
+    .plot-container {
+      margin: 10px;
+      padding: inherit;
+    }
   </style>
 </head>
 
@@ -146,98 +152,109 @@
     </div>
   </header>
   <div class="content">
-  
-      <div class="content-box">
-        <h2>How to Prepare for a Fire</h2>
-        <p>Preparing for a fire in California is essential to ensure the safety of yourself, your loved ones, and your
-          property. The threat of wildfires in the state is a reality that requires proactive measures and careful
-          planning. Here are some crucial steps to take in order to prepare for a fire and understand its potential
-          impact:
-        </p>
-        <h3>1. Stay Informed:</h3>
-        <p>
-          Keep yourself updated on current fire conditions, warnings, and evacuation orders by monitoring local news,
-          official websites, and emergency alerts. Sign up for your community's emergency notification systems to receive
-          timely information.
-        </p>
-        <h3>2. Create an Emergency Plan:</h3>
-        <p>
 
-          Develop a detailed emergency plan that includes evacuation routes, meeting points, and contact information for
-          family members. Discuss and practice the plan with everyone in your household to ensure everyone knows what to
-          do in case of a fire.
-        </p>
-              <h3>3. Prepare an Emergency Kit:</h3>
-        <p>
-    
-          Assemble an emergency kit with essential supplies, including non-perishable food, water, a first aid kit,
-          medications, flashlights, batteries, important documents, cash, and a portable phone charger. Keep the kit in an
-          easily accessible location.
-        </p>
-        <h3>4. Protect Your Property:</h3>
+    <div class="content-box">
+      <h2>How to Prepare for a Fire</h2>
+      <p>Preparing for a fire in California is essential to ensure the safety of yourself, your loved ones, and your
+        property. The threat of wildfires in the state is a reality that requires proactive measures and careful
+        planning. Here are some crucial steps to take in order to prepare for a fire and understand its potential
+        impact:
+      </p>
+      <h3>1. Stay Informed:</h3>
+      <p>
+        Keep yourself updated on current fire conditions, warnings, and evacuation orders by monitoring local news,
+        official websites, and emergency alerts. Sign up for your community's emergency notification systems to receive
+        timely information.
+      </p>
+      <h3>2. Create an Emergency Plan:</h3>
+      <p>
 
-        <p>
-          Create defensible space around your home by removing flammable materials such as dry leaves, dead vegetation,
-          and fallen branches. Trim trees and bushes, and keep your gutters clean. Use fire-resistant materials when
-          building or renovating your property.
-        </p>
-        <h3>5. Secure Important Documents:</h3>
+        Develop a detailed emergency plan that includes evacuation routes, meeting points, and contact information for
+        family members. Discuss and practice the plan with everyone in your household to ensure everyone knows what to
+        do in case of a fire.
+      </p>
+      <h3>3. Prepare an Emergency Kit:</h3>
+      <p>
 
-        <p>
-          Keep copies of important documents, such as identification papers, insurance policies, and property records, in
-          a fireproof and waterproof container. Consider storing digital copies in a secure cloud-based service.
-        </p>
-        <h3>6. Review Insurance Coverage:</h3>
+        Assemble an emergency kit with essential supplies, including non-perishable food, water, a first aid kit,
+        medications, flashlights, batteries, important documents, cash, and a portable phone charger. Keep the kit in an
+        easily accessible location.
+      </p>
+      <h3>4. Protect Your Property:</h3>
 
-        <p>
-          Ensure that your homeowner's insurance policy provides adequate coverage for fire damage. Understand the terms
-          and exclusions of your policy, and consider obtaining additional coverage if necessary.
-        </p>
-        <h3>7. Pack a "Go Bag":</h3>
+      <p>
+        Create defensible space around your home by removing flammable materials such as dry leaves, dead vegetation,
+        and fallen branches. Trim trees and bushes, and keep your gutters clean. Use fire-resistant materials when
+        building or renovating your property.
+      </p>
+      <h3>5. Secure Important Documents:</h3>
 
-        <p>
-          Prepare a "go bag" with essential items you may need to grab quickly during an evacuation. Include items like
-          clothing, toiletries, important medications, and a portable radio.
-        </p>
-        <h3>8. Stay Vigilant and Practice Fire Safety:</h3>
+      <p>
+        Keep copies of important documents, such as identification papers, insurance policies, and property records, in
+        a fireproof and waterproof container. Consider storing digital copies in a secure cloud-based service.
+      </p>
+      <h3>6. Review Insurance Coverage:</h3>
 
-        <p>
-          Follow fire safety guidelines and regulations. Avoid activities that may cause sparks or fires, such as using
-          fireworks or outdoor grills during dry periods. Be cautious with campfires and properly extinguish them before
-          leaving.
-        </p>
-        <h3>9. Understand the Impact:</h3>
+      <p>
+        Ensure that your homeowner's insurance policy provides adequate coverage for fire damage. Understand the terms
+        and exclusions of your policy, and consider obtaining additional coverage if necessary.
+      </p>
+      <h3>7. Pack a "Go Bag":</h3>
 
-        <p>
-          Be aware of how a fire can affect you physically, emotionally, and financially. Wildfires can cause the loss of
-          homes, displacement, poor air quality, and stress. Stay connected with support networks, reach out for help if
-          needed, and seek assistance from local resources and relief organizations.
-        </p>
-        
-      </div>
-    <div class="content-box2">
-  <div class="content-box2A">
-    <!-- Existing content -->
-    <div class="result-box" id="result-box">
-      <h3 id="prediction-result"></h3>
+      <p>
+        Prepare a "go bag" with essential items you may need to grab quickly during an evacuation. Include items like
+        clothing, toiletries, important medications, and a portable radio.
+      </p>
+      <h3>8. Stay Vigilant and Practice Fire Safety:</h3>
+
+      <p>
+        Follow fire safety guidelines and regulations. Avoid activities that may cause sparks or fires, such as using
+        fireworks or outdoor grills during dry periods. Be cautious with campfires and properly extinguish them before
+        leaving.
+      </p>
+      <h3>9. Understand the Impact:</h3>
+
+      <p>
+        Be aware of how a fire can affect you physically, emotionally, and financially. Wildfires can cause the loss of
+        homes, displacement, poor air quality, and stress. Stay connected with support networks, reach out for help if
+        needed, and seek assistance from local resources and relief organizations.
+      </p>
+
     </div>
-    <a href="javascript:void(0);" class="btn" onclick="predict()">Predict the Total Acres that may be damaged in
-      2025</a>
-    <br>
-    <br>
-    <p>The prediction of the total area of fire burning in 2025 was calculated using a linear regression model trained
-      on historical data. The model analyzed the relationship between the year and the total area burned in previous
-      years. Based on this analysis, it estimated the total area of fire burning in 2025. The prediction provides
-      valuable insights for planning and mitigating fire incidents in the future.</p>
-  </div>
-  <div class="inner-box">
-    <!-- New box content here -->
-    <h3>California Regions Most Supceptible To Fire</h3>
-		<p>ADD IMAGE</p>
-    <p>This program analyzes data on locations that experienced the most acreages burned during the years 2015 to 2017. The above map identify hotspots or areas with higher fire vulnerability, allowing authorities or relevant stakeholders to prioritize fire prevention and management efforts in those locations. By focusing on areas that have experienced significant acreages burned in the past, it becomes possible to mitigate risks and enhance fire preparedness in these regions to minimize potential damages and loss of natural resources in the future.</p>
-  </div>
-</div>
-    
+    <div class="content-box2">
+      <div class="content-box2A">
+        <div class="result-box" id="result-box">
+          <h3 id="prediction-result"></h3>
+        </div>
+        <a href="javascript:void(0);" class="btn" onclick="predict()">Predict the Total Acres that may be damaged in
+          2025</a>
+        <br>
+        <br>
+        <p>The prediction of the total area of fire burning in 2025 was calculated using a linear regression model
+          trained
+          on historical data. The model analyzed the relationship between the year and the total area burned in previous
+          years. Based on this analysis, it estimated the total area of fire burning in 2025. The prediction provides
+          valuable insights for planning and mitigating fire incidents in the future.</p>
+      </div>
+      <div class="content-box">
+        <a href="javascript:void(0);" class="btn" onclick="showPlot()">Show the Fire Plot</a>
+        <div class="plot-container" id="plot-container"></div>
+        <script>
+          function showPlot() {
+            var plotContainer = document.getElementById("plot-container");
+            plotContainer.innerHTML = '<img src="map3.png" alt="Fire Plot" class="plot-image">';
+            plotContainer.classList.add("show");
+          }
+        </script>
+        <p>This map analyzed data on locations that experienced the most acreages burned during the years 2015 to 2017.
+          The above map identify hotspots or areas with higher fire vulnerability, allowing authorities or relevant
+          stakeholders to prioritize fire prevention and management efforts in those locations. By focusing on areas
+          that have experienced significant acreages burned in the past, it becomes possible to mitigate risks and
+          enhance fire preparedness in these regions to minimize potential damages and loss of natural resources in the
+          future.</p>
+      </div>
+    </div>
+
   </div>
 
   <script>
@@ -246,23 +263,16 @@
       var predictionResult = document.getElementById('prediction-result');
       var button = document.querySelector('.button');
 
-      // Make a request to the server or perform any necessary computations here
+  predictionResult.innerHTML = 'Loading...';
 
-      // Update the result
-      predictionResult.innerHTML = 'Loading...';
-
-      // Simulate delay for demonstration purposes
       setTimeout(function () {
         predictionResult.innerHTML = '5922.076923076923 sq. miles';
         resultBox.style.display = 'block';  // Show the result box
       }, 2000);
 
-      // Disable the button after clicking
       button.disabled = true;
     }
   </script>
 </body>
 
 </html>
-
-
