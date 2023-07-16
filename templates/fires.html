@@ -93,6 +93,13 @@
       max-height: fit-content;
     }
 
+    .map {
+      background-image: url(map3.png);
+  background-size: cover;
+  background-position: center;
+  width: fit-content;
+    }
+
     .content-box2A {
       background-color: #e0c07f;
       padding: inherit;
@@ -100,13 +107,12 @@
 
 
 
-    /* .content-box img {
-      width: 30%;
+    .content-box img {
+      width: 90%;
       height: auto;
-      float: right;
       margin: 0 0 10px 10px;
     }
- */
+
     .content-box h2 {
       text-align: center;
       margin: 0px;
@@ -242,7 +248,7 @@
         <script>
           function showPlot() {
             var plotContainer = document.getElementById("plot-container");
-            plotContainer.innerHTML = '<img src="map3.png" alt="Fire Plot" class="plot-image">';
+            plotContainer.innerHTML = '<img src="https://static.wixstatic.com/media/47ff96_39bac95ebb104df99b52dcf0fa10f002~mv2.jpg/v1/fill/w_668,h_638,al_c,q_85,enc_auto/map.jpg" alt="Fire Plot" class="plot-image">';
             plotContainer.classList.add("show");
           }
         </script>
