@@ -2,7 +2,7 @@ import pandas as pd
 import geopandas as gpd
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('datastructures/fireData.csv')
+data = pd.read_csv('datastructures/fireData1.csv')
 
 # Assuming 'california.shp' is the shapefile for California
 california = gpd.read_file('caCounty.shp')
