@@ -2,6 +2,7 @@ import pandas as pd
 import geopandas as gpd
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
+from matplotlib.lines import Line2D
 
 
 data = pd.read_csv('datastructures/fireDataCondense.csv')
@@ -17,8 +18,10 @@ geometry = gpd.points_from_xy(data['LONGITUDE'], data['LATITUDE'])
 gdf = gpd.GeoDataFrame(data, geometry=geometry)
 
 # Plot the California map
-california.plot(color='lightgray', edgecolor='black', figsize=(10, 8))
+california_color = (213/255, 213/255, 196/255) 
+california.plot(color=california_color, edgecolor='black', figsize=(10, 8))
 cmap = plt.cm.get_cmap('jet')
+
 
 # #-------------
 # # Plot the bubbles and set the color based on the 'BUBBLESIZE' column
@@ -44,6 +47,14 @@ for idx, row in gdf.iterrows():
 gdf.plot(ax=plt.gca(), marker='o', cmap='jet', markersize=data['BUBBLESIZE'], alpha=0.7)
 
 
+# #legend
+# # Create custom legend entries for name and acres burnt
+# legend_elements = [Line2D([], [], marker='o', color='none', markersize=10, alpha=0.7),
+#                    Line2D([], [], linestyle='', marker='o', markersize=0, label='Name'),
+#                    Line2D([], [], linestyle='', marker='o', markersize=0, label='Acres Burnt')]
+
+# # Add custom legend entries to the upper right corner
+# plt.legend(handles=legend_elements, loc='upper right')
 
 # Plot the bubbles and use a colormap to set the color based on the 'BUBBLESIZE' column
 
