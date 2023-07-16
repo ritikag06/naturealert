@@ -22,4 +22,4 @@ gdf.plot(ax=plt.gca(), marker='o', color='red', markersize=data['BubbleSizeColum
 plt.title('Bubble Map of California')
 plt.xlabel('Longitude')
 plt.ylabel('Latitude')
-plt.show()
+plt.show() 
