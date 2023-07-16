@@ -35,7 +35,7 @@ plt.title('California Fire Spots')
 plt.axis('off')
 
 # Save the plot as an image (e.g., PNG)
-plt.savefig('map.png', bbox_inches='tight', pad_inches=0)
+plt.show('map.png', bbox_inches='tight', pad_inches=0)
 
 # Close the plot
 plt.close()
