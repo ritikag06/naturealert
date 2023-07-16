@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import geopandas as gpd
+import matplotlib.colors as mcolors
 
 
 def calculate_total_acre(file_path, week_column, people_column):
@@ -36,7 +37,7 @@ def calculate_total_acre(file_path, week_column, people_column):
     plt.title('Total Population Affected by Each Month (Line Plot)')
     plt.xticks(rotation=45)
     plt.grid()
-    plt.show()
+    plt.savefig('droughtplot.png')
 
 calculate_total_acre('datastructures/droughts1.csv', 'Month', 'TotalPopulation')
 
