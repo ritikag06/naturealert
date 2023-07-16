@@ -9,7 +9,7 @@ data = pd.read_csv('datastructures/fireDataCondense.csv')
 california = gpd.read_file('datastructures/map/cali.shp')
 
 # Create a GeoSeries with the same length as the DataFrame
-geometry = gpd.points_from_xy(data['LATITUDE'], data['LONGITUDE'])
+geometry = gpd.points_from_xy(data['LONGITUDE'], data['LATITUDE'])
 
 # Create a GeoDataFrame with the GeoSeries as the geometry
 gdf = gpd.GeoDataFrame(data, geometry=geometry)
