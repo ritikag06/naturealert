@@ -8,7 +8,7 @@ data= pd.read_csv('datastructures/fireData.csv')
 
 #print(data.describe()) #provides mean,count,std,min,25,50,75,max
 #print(data.head()) #prints first few tables
-
+ 
 
 x_values = data['FIRE_NAME'] 
 y_values = data['GIS_ACRES']
