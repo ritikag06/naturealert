@@ -4,38 +4,39 @@ import matplotlib.pyplot as plt
 
 
 def calculate_total_acre(file_path, week_column, people_column):
-    # Read the CSV file
+
     data = pd.read_csv('datastructures/droughts1.csv')
 
-    # Create a dictionary to store the total acreage for each name
-    total_effected = {}
+    
+    month_mapping = {
+        1: 'January',
+        2: 'February',
+        3: 'March',
+        4: 'April',
+        5: 'May',
+        6: 'June',
+        7: 'July',
+       
+    }
+
+    
+    data['Month'] = data['Month'].map(month_mapping)
+    data['Month'] = pd.Categorical(data['Month'], categories=list(month_mapping.values()), ordered=True)
+
+
+    monthly_population = data.groupby('Month')['TotalPopulation'].sum()
+ 
   
-    # Iterate over the rows
-    for index, row in data.iterrows():
-        month = row[week_column]
-        people = row[people_column]
+    plt.figure(figsize=(10, 6))
+    monthly_population.plot(kind='line', marker='o', color='blue')
+    
 
-        # Check if the name exists in the dictionary
-        if month in total_effected:
-            total_effected[month] += people
-        else:
-            total_effected[people] = people
-
-    # Print the total acreage for each name
-    for month, acre in total_effected.items():
-        print(month, ":", people)
-        print("done")
-
-    names = list(total_effected.keys())
-    acres = list(total_effected.values())
-
-    plt.bar(month, people)
     plt.xlabel('Month')
-    plt.ylabel('Total ppl') 
-    plt.title('Total Acreage by Name')
-    # # plt.xticks(rotation=90)
+    plt.ylabel('Total Population Affected')
+    plt.title('Total Population Affected by Each Month (Line Plot)')
+    plt.xticks(rotation=45)
+    plt.grid()
     plt.show()
 
-# Call the function with the appropriate arguments
-calculate_total_acre('droughts1.csv', 'Week', 'TotalPopulation')
+calculate_total_acre('datastructures/droughts1.csv', 'Month', 'TotalPopulation')
 
