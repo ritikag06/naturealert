@@ -69,9 +69,10 @@
       padding: 20px;
       margin-bottom: 20px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      text-align: center; /* Center the content inside the box */
+      text-align: center;
+      /* Center the content inside the box */
     }
-    
+
 
     .content-box img {
       width: 30%;
@@ -84,33 +85,78 @@
       text-align: center;
       margin: 0px;
     }
-    
+
     .content-box .btn {
       display: float;
-      margin: 0 auto; /* Center the button horizontally */
+      margin: 0 auto;
+      /* Center the button horizontally */
       padding: 10px 20px;
       background-color: #d1af6c;
       color: black;
       text-decoration: none;
       border-radius: 5px;
       margin-top: 10px;
-      text-align: center; /* Center the button text */
+      text-align: center;
+      /* Center the button text */
     }
 
     .content-box p {
       text-align: left;
       margin-bottom: 20px;
+      padding-left: inherit;
+    padding-right: inherit;
     }
-
   </style>
 </head>
 
 <body>
   <header>
-    <a href="/"><h1>NatureAlert</h1></a>
+    <a href="/">
+      <h1>NatureAlert</h1>
+    </a>
     <div class="tabs">
       <a href="/">Home</a>
       <a href="/droughts">Droughts</a>
       <a href="/fires">Fires</a>
     </div>
   </header>
+  <div class="content">
+    <div class="content-box">
+      <!-- <h2>Predicted Total Acres Burned in 2025</h2> -->
+      <div class="result-box" id="result-box">
+        <h3 id="prediction-result"></h3>
+      </div>
+      <a href="javascript:void(0);" class="btn" onclick="predict()">Predict the Total Acres that may be damaged in
+        2025</a>
+
+      <p>The prediction of the total area of fire burning in 2025 was calculated using a linear regression model trained
+        on historical data. The model analyzed the relationship between the year and the total area burned in previous
+        years. Based on this analysis, it estimated the total area of fire burning in 2025. The prediction provides
+        valuable insights for planning and mitigating fire incidents in the future.</p>
+    </div>
+  </div>
+
+  <script>
+    function predict() {
+      var resultBox = document.getElementById('result-box');
+      var predictionResult = document.getElementById('prediction-result');
+      var button = document.querySelector('.button');
+
+      // Make a request to the server or perform any necessary computations here
+
+      // Update the result
+      predictionResult.innerHTML = 'Loading...';
+
+      // Simulate delay for demonstration purposes
+      setTimeout(function () {
+        predictionResult.innerHTML = '5922.076923076923 sq. miles';
+        resultBox.style.display = 'block';  // Show the result box
+      }, 2000);
+
+      // Disable the button after clicking
+      button.disabled = true;
+    }
+  </script>
+</body>
+
+</html>

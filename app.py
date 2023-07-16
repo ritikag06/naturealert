@@ -18,9 +18,6 @@ def fires():
 # def map():
 #     return render_template('map.html')
 
-@app.route('/droughtplot')
-def droughtplot():
-    return render_template('interactive_graph.html')
 
 if __name__ == '__main__':
     app.run()
