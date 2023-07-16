@@ -14,6 +14,10 @@ def droughts():
 def fires():
     return render_template('fires.html')
 
+# @app.route('/map')
+# def map():
+#     return render_template('map.html')
+
 @app.route('/droughtplot')
 def droughtplot():
     return render_template('interactive_graph.html')
