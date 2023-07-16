@@ -82,7 +82,7 @@ YEAR_,STATE,AGENCY,UNIT_ID,FIRE_NAME,INC_NUM,ALARM_DATE,CONT_DATE,CAUSE,COMMENTS
 2017,California,Bureau of Land Management,Northern CA District - BLM,LONE,5155,8/29/17,8/30/17,1 - Lightning,<Null>,0,214.6641,1 - GPS Ground,Suppression (Wildfire)
 2017,California,Bureau of Land Management,Northern CA District - BLM,MUD,5152,8/29/17,9/11/17,1 - Lightning,<Null>,0,6036.065,7 - Mixed Collection Methods,Suppression (Wildfire)
 2017,California,Bureau of Land Management,Northern CA District - BLM,R-5 SPANISH,5181,8/29/17,8/31/17,1 - Lightning,<Null>,0,166.8586,7 - Mixed Collection Methods,Suppression (Wildfire)
-2017,California,Bureau of Land Management,Northern California District BLM,SLINKARD,1478,8/29/17,9/21/17,1 - Lightning,<Null>,0,8923.495,7 - Mixed Collection Methods,Suppression (Wildfire)
+2017,California,Bureau of Land Management,Northern CA District - BLM,SLINKARD,1478,8/29/17,9/21/17,1 - Lightning,<Null>,0,8923.495,7 - Mixed Collection Methods,Suppression (Wildfire)
 2017,California,California Department of Forestry and Fire Protection,Madera - Mariposa CAL FIRE,EASTMAM,19222,9/18/17,9/18/17,11 - Powerline,<Null>,483,482.3408,1 - GPS Ground,Suppression (Wildfire)
 2017,California,Local Response Area,Los Angeles City FD,SKIRBALL,30179,12/6/17,12/7/17,4 - Campfire,"FIMT most info from LAFD website, homelss cook fire",422,371.3076,8 - Unknown,Suppression (Wildfire)
 2017,California,California Department of Forestry and Fire Protection,Riverside CAL FIRE,MANZANITA,78840,6/26/17,6/30/17,10 - Vehicle,,6309,6303.659,3 - Infrared,Suppression (Wildfire)
