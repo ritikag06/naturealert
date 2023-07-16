@@ -2,7 +2,7 @@ import pandas as pd
 import geopandas as gpd
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('datastructures/fireData1.csv')
+data = pd.read_csv('datastructures/fireDataCondense.csv')
 
 
 # Assuming 'california.shp' is the shapefile for California
@@ -18,7 +18,7 @@ gdf = gpd.GeoDataFrame(data, geometry=geometry)
 california.plot(color='lightgray', edgecolor='black', figsize=(10, 8))
 
 # Plot the bubbles
-gdf.plot(ax=plt.gca(), marker='o', color='red', markersize=data['GIS_ACRES'], alpha=0.7)
+gdf.plot(ax=plt.gca(), marker='o', color='red', markersize=data['BUBBLESIZE'], alpha=0.7)
 
 plt.title('Bubble Map of California')
 plt.xlabel('Longitude')

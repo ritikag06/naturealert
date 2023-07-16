@@ -26,7 +26,7 @@ def calculate_total_acre(file_path, name_column, acre_column):
     # Print the total acreage for each name
     for name, acre in total_acreage.items():
         print(name, ":", acre)
-    print("done")
+        print("done")
 
     names = list(total_acreage.keys())
     acres = list(total_acreage.values())
