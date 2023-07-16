@@ -20,6 +20,6 @@ california.plot(color='lightgray', edgecolor='black', figsize=(10, 8))
 gdf.plot(ax=plt.gca(), marker='o', color='red', markersize=data['BUBBLESIZE'], alpha=0.7)
 
 plt.title('Bubble Map of California')
-plt.xlabel('Longitude')
-plt.ylabel('Latitude')
+plt.xlabel('Latitude')
+plt.ylabel('Longitude')
 plt.show() 
