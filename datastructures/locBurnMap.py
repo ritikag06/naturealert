@@ -38,4 +38,4 @@ plt.axis('off')
 plt.show('map.png', bbox_inches='tight', pad_inches=0)
 
 # Close the plot
-plt.close()
+plt.close() 
